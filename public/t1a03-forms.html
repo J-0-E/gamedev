@@ -2,15 +2,30 @@
  t1a03 Jon 
 </h1>
 
-<font color=blue> Prove you can use: Forms </font> <br> 
+<h1 align="center">
+ Welcome! This website will force you to order the best kind of pizza: <br>
+Pinapple! 
+</h1>
 
-cool form elements below: <br>
-Enter your first name: <input type=text id="myText01" value="Fred"> <br> 
+<div class="prove">
+<font color=blue class="prove"> Prove you can use: Forms (Yes I am amazing at this and am capable of using all of these random things!!!) </font> <br> 
+</div>
+
+
+ORDER A PIZZA! <br>
+Enter your first name for the order: <br> P.S your name isn't fed <br>  <input type=text id="myText01" value="Fred"> <br> 
 <form> 
 
-Checkbox: <br>
-Beef: <input type=checkbox> <br>
-Veggie: <input type=checkbox> <br> 
+
+Select Pizza Type! <br>
+Pinapple <input type=radio> <br> 
+<button id="btn" onclick="setC(false)">Unheck C</button>
+
+    <input id="check-c" onchange="alert('You are not allowed to do that!')" type="checkbox"> C
+
+<br>
+<br>
+
 
 
 Radio Buttons: <br>
@@ -36,7 +51,7 @@ Select Box: <br>
  <option value="myOne"> One 
   <option value="myTwo"> Two
 
- <option value="myTree"> Three
+ <option value="myThree">
 
 
  
@@ -46,6 +61,21 @@ Select Box: <br>
 </select>
 </form> 
 
+<script> 
+
+ function setC(checked){
+    var elm = document.getElementById('check-c');
+    if (checked != elm.checked) {
+        elm.click();
+    }
+}
+
+
+
+
+
+
+</script>
 
 
 
@@ -53,10 +83,32 @@ Select Box: <br>
 <style> 
 
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+SS
+
+
+.prove {
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500
+
+  
+}
+
+
 body {
   
   background-color: gray;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300
+
 }
 
 
