@@ -1,7 +1,7 @@
 <body>
   
-  <h3> JONATHAN </h3>
-  <h1> MY VERY COOL <br> WEBSITES!!!! </h1> 
+  <h3 class="name"> JONATHAN </h3>
+  <h1 class="websites"> MY VERY COOL <br> WEBSITES!!!! </h1> 
 
 <div class=background-image> </div>
 
@@ -14,13 +14,13 @@
   
   <br> 
   
-  <a href="https://theactualzenald.github.io/gamedev/public/t1a01%20basic-web-jon.html">assignment 1 basic web things  </a> <br>
+  <a href="https://theactualzenald.github.io/gamedev/public/t1a01%20basic-web-jon.html">assignment 1 basic web things  </a> <br> <br> 
   
-  <a href="https://theactualzenald.github.io/gamedev/public/t1a02-tables-jon.html"> t1a02-tables-jon.html </a> <br>
-  <a href="https://theactualzenald.github.io/gamedev/public/t1a03-forms.html"> t1a03-forms-jon.html </a> <br>
+  <a href="https://theactualzenald.github.io/gamedev/public/t1a02-tables-jon.html"> t1a02-tables-jon.html </a> <br><br> 
+  <a href="https://theactualzenald.github.io/gamedev/public/t1a03-forms.html"> t1a03-forms-jon.html </a> <br><br> 
   
- <a href="https://theactualzenald.github.io/gamedev/public/t1a04-css-jon.html"> t1a04-css-jon.html </a> <br> 
-<a href="https://theactualzenald.github.io/gamedev/public/t1a15-review-coding-jon.html"> t1a15-review-jon.html </a> <br> 
+ <a href="https://theactualzenald.github.io/gamedev/public/t1a04-css-jon.html"> t1a04-css-jon.html </a> <br> <br> 
+<a href="https://theactualzenald.github.io/gamedev/public/t1a15-review-coding-jon.html"> t1a15-review-jon.html </a> <br> <br> 
   
 <br> 
   <br>
@@ -30,17 +30,19 @@
 <style> 
 
   
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
   
   body {
     
   
-font-family: 'Orbitron', sans-serif; 
+font-family: 'Permanent Marker', cursive;
     font-size: 20px;
     background-color: black;
-       background-image: url(https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-color: #d7d7d7;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #d7d7d7 15px ), repeating-linear-gradient( #00000055, #000000 );
     
-    color: #383838;
+    color: black;
     text-align: center;
 background-position: center;
   background-repeat: no-repeat;
@@ -49,7 +51,8 @@ background-position: center;
   }
   
   a {
-    color: #636363;
+    color: black;
+    text-shadow: 1px 1px black;
   }
   
   a:hover {
@@ -71,6 +74,42 @@ background-position: center;
   .background-image {
     filter: blur(2px);
     -webkit-filter: blur(8px);
+  }
+  
+  .name {
+    
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+  }
+  
+  .name:hover{
+    background-color: black;
+    transition: 0.5s all;
+    color: white;
+    border-radius: 1em;
+  }
+  
+  
+  .websites {
+    
+       background-color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0px;
+    color: white;
+    
+  }
+  
+  
+  .websites:hover {
+    
+       background-color: white;
+    transition: 0.5s all;
+    color: black;
+    border-radius: 1em;
+    padding: 0px all;
   }
   
   
