@@ -1,4 +1,4 @@
-Version 3000.1
+Version 3000.2
 
 <h2>
 t1a05 input output
@@ -29,12 +29,14 @@ let myIn01 = document.getElementById('myNum01').value document.getElementById('m
 
 <table style="width:100%" class="table">
   <tr>
-  <td> <h4> Example working code: </h4> </td> 
+  <td> <h4> Example working code: </h4> </td> <td> </td>
     <td> <input id="myNum01" type="nunber" value="0² " > <br>  </td>
 
   </tr>
   
+  
   <tr>
+  </tr>
   
     <td> <input  class="calculate" type=button value="CALCULATE " onClick="{
 let myIn01 =  parseFloat(document.getElementById('myNum01').value)
@@ -49,12 +51,19 @@ myIn01 + ' squared = ' + myAnswer
     <div id="myDiv01">
  ...
 </div> 
-</td>
 
+
+</td>
+<td> <--- Cool answer that might not   be correct (sorry) <br> </td>
   </tr>
 </table>
 
 <br> <br> 
+<div class="calculator-text">
+<h4>
+ The most original Calculator:
+</h4>
+</div> 
 
 
 <div class=calculator> 
@@ -108,13 +117,23 @@ myIn01 + ' squared = ' + myAnswer
 }
 
 #myDiv01 {
-  opacity: 0;
-  
-}
-#myDiv01 {
   opacity: 1;
-  transition: 1s all
-  
+  padding-left: 100px;
+  padding-right: 100px;
+  transition: .3s all;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-shadow: color: #d9d9d9;
+text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+@keyframes example {
+  0%   {color:red; left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:blue; left:200px; top:200px;}
+
+  100% {color:red; left:0px; top:0px;}
 }
 
 .calculator {
@@ -124,6 +143,12 @@ myIn01 + ' squared = ' + myAnswer
   padding: 10px;
   
 }
+
+.calculator-text {
+  color: orange;
+
+}
+
 body {
   background-color: hotpink;
   font-family: 'Poppins', sans-serif;
